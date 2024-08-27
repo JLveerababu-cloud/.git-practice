@@ -36,7 +36,7 @@ else
     echo "Git is already installed, nothing to do.."
 fi
 
-dnf list installed mysql
+dnf list installed mysqll
 
 if [ $? -ne 0 ]
 then
