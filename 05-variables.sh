@@ -1,13 +1,14 @@
 #!/bin/bash
 
-echo "Please enter your username"
+echo "Please enter your username::"
 
-read -s USERNAME  #takes interept  input into USERNAME variables
+# shellcheck disable=SC2162
+read -s USERNAME #takes input into USERNAME variable
 
 echo "Username entered is: $USERNAME"
 
 echo "Please enter your password::"
 
+# shellcheck disable=SC2162
 read -s PASSWORD
- 
- echo "Password entered is: $PASSWORD"
+echo "Password entered is: $PASSWORD"

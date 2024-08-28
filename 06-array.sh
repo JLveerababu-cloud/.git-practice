@@ -1,13 +1,11 @@
 #!/bin/bash
 
-# shellcheck disable=SC2034
-# shellcheck disable=SC2054
-# shellcheck disable=SC2140
-FRUITS=("APPLE","KIWI","ORANGE")
+# index starts from 0, size is 3
+FRUITS=("APPLE" "KIWI" "ORANGE") #Array
 
-echo "first fruit is:${FRUITS[0]}"
-echo "first fruit is:${FRUITS[1]}"
-echo "first fruit is:${FRUITS[2]}"
+echo "First fruit is: ${FRUITS[0]}"
+echo "Second fruit is: ${FRUITS[1]}"
+echo "Third fruit is: ${FRUITS[2]}"
 
 # shellcheck disable=SC2145
-echo "FIrst fruit is:${FRUITS[@]}"
+echo "First fruit is: ${FRUITS[@]}"
