@@ -6,6 +6,7 @@ G="\e[32m"
 N="\e[0m"
 
 CHECK_ROOT(){
+    # shellcheck disable=SC2086
     if [ $USERID -ne 0 ]
     then
         echo "Please run this script with root priveleges"
