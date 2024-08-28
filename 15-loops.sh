@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
 #!/bin/bash
 
 USERID=$(id -u)
