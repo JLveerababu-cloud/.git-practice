@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# shellcheck disable=SC2145
+echo "All variables passed to the script: $@"
