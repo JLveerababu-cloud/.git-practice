@@ -3,9 +3,8 @@
 for i in {0...1000}  #0-100
 
 do 
-   echo $id
-
-   done
+   echo $i
+done
 
 
 # echo "1"
