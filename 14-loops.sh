@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in {0..1000}  #0-100
+for i in {0..100}  #0-100
 
 do 
    echo $i
