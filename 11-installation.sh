@@ -9,7 +9,7 @@ then
   exit 1
   fi
 
-  dnf list installed git # Just checking whether installed or not
+  dnf list installed gittt # Just checking whether installed or not
 
   if [ $? -ne 0 ]
   then 
@@ -17,6 +17,12 @@ then
 
     dnf install git -y
 
+    if [ $? -ne 0 ]
+    then 
+      echo "Git installation is not succes...check it"
+      exit 1
+      else
+         echo "Git installation is successs"
     else 
      echo "Git is alraedy installed nothing to do.."
 
