@@ -24,7 +24,7 @@ then
       else
          echo "Git installation is successs"
     else 
-     echo "Git is alraedy installed nothing to do.."
+     echo "Git is alraedy installed, nothing to do.."
 
      fi
 
@@ -34,7 +34,7 @@ then
     if [ $? -ne 0 ]
     then 
 
-         echo "mysql not installed going to installed it"
+         echo "mysql is not installed going to installed it"
          dnf install mysql -y
   if [ $? -ne 0 ]
     then
@@ -45,5 +45,6 @@ then
 
      fi
     else
-          echo "my sql is alraedy is installed ..nothing to do"
+          echo "mysql is alraedy is installed ..nothing to do"
 
+fi
