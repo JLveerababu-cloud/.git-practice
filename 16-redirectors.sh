@@ -39,6 +39,8 @@ if [ $# -eq 0 ]
 then
  USAGE
 
+ fi
+ 
 for package in $@  #@  refers to all arguments passed to it
 
 do
@@ -54,3 +56,4 @@ do
        echo -e "$package is alraedy $Y install ..nothing to do $N" &>>$LOG_FILE
        fi
 done
+
