@@ -32,6 +32,8 @@ VALIDATE(){
        echo -e "$R USAGE :: $N sudo sh 16-redirectors.sh package1 package2 ..."
        exit 1
 }
+
+echo "Script started executing at: $date"
 CHECK_ROOT
 
 if [ $# -eq 0 ]
@@ -40,7 +42,7 @@ then
  USAGE
 
  fi
- 
+
 for package in $@  #@  refers to all arguments passed to it
 
 do
