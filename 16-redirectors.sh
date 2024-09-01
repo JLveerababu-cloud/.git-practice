@@ -28,8 +28,16 @@ VALIDATE(){
         echo -e "$2 is... $G SUCCESS $N" &>>$LOG_FILE
     fi
 }
-
+  USAGE(){
+       echo -e "$R USAGE :: $N sudo sh 16-redirectors.sh package1 package2 ..."
+       exit 1
+}
 CHECK_ROOT
+
+if [ $# -eq 0 ]
+
+then
+ USAGE
 
 for package in $@  #@  refers to all arguments passed to it
 
@@ -43,6 +51,6 @@ do
    VALIDATE $? "installing $package"   
 
    else   
-       echo "$package is alraedy $Y install ..nothing to do $N" &>>$LOG_FILE
+       echo -e "$package is alraedy $Y install ..nothing to do $N" &>>$LOG_FILE
        fi
 done
